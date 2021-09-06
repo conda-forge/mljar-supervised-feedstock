@@ -41,7 +41,7 @@ requirements:
     - tabulate >=0.8.7
     - wordcloud >=1.8.1
     - plotly
-    - numba==0.53.0
+    - numba ==0.53.0
 
 test:
   imports:
