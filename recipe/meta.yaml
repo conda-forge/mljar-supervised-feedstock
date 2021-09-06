@@ -1,5 +1,5 @@
 {% set name = "mljar-supervised" %}
-{% set version = "0.10.6" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mljar-supervised-{{ version }}.tar.gz
-  sha256: 415d32edf48f5cc6a9dfcb1ecd651a6d7df6caa7f8ea5bcdac51fae4231a8f47
+  sha256: 68ba454de8a0f9c2e6e5d6e81b6d9936460008dfa3f7353534aa21968a9a1534
 
 build:
   number: 0
@@ -41,6 +41,7 @@ requirements:
     - tabulate >=0.8.7
     - wordcloud >=1.8.1
     - plotly
+    - numba ==0.53.0
 
 test:
   imports:
