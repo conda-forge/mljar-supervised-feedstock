@@ -11,7 +11,7 @@ source:
   sha256: c85e74d30b61deb1baf1a724adaf4cef3483a88e2f182e10363b76bdcb4d5fa5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,7 +25,7 @@ requirements:
     - xgboost >=1.3.3
     - catboost >=0.24.4
     - category_encoders >=2.2.2
-    - dtreeviz >=1.3
+    - dtreeviz >=1.3.2
     - joblib >=1.0.1
     - lightgbm >=3.0.0
     - markdown
