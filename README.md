@@ -1,11 +1,11 @@
-About mljar-supervised
-======================
+About mljar-supervised-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mljar-supervised-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mljar/mljar-supervised
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mljar-supervised-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automated Machine Learning Pipeline with Feature Engineering and Hyper-Parameters Tuning
 
