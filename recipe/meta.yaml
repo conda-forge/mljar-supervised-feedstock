@@ -11,7 +11,7 @@ source:
   sha256: 2772b18c99279aa8db98146f0d0923ae04977a4d6534050628725021fdc47974
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -36,7 +36,7 @@ requirements:
     - scikit-plot ==0.3.7
     - scipy >=1.6.1,<=1.11.4
     - seaborn >=0.11.1
-    - shap >=0.36.0
+    - shap >=0.36.0,<=0.43.0
     - tabulate >=0.8.7
     - wordcloud >=1.8.1
     - typing-extensions
