@@ -30,7 +30,7 @@ requirements:
     - markdown
     - matplotlib-base >=3.2.2
     - numpy >=1.19.5
-    - optuna >=2.7.0
+    - optuna-integration >=3.6.0
     - pandas >=2.0.0
     - scikit-learn >=1.5.0
     - mljar-scikit-plot >=0.3.11
