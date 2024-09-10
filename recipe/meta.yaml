@@ -1,5 +1,5 @@
 {% set name = "mljar-supervised" %}
-{% set version = "1.1.10" %}
+{% set version = "1.1.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mljar-supervised-{{ version }}.tar.gz
-  sha256: b35290afa5627928e4945b42c10770fb6632480af9ecaa3d8d16e95e5c0670ec
+  sha256: 0acbcf85835970e0b57673301d0458d26256ad8dae417e0f3e4808d4cf3c17cc
 
 build:
   number: 0
@@ -34,7 +34,7 @@ requirements:
     - pandas >=2.0.0
     - scikit-learn >=1.5.0
     - mljar-scikit-plot >=0.3.11
-    - scipy >=1.6.1,<=1.11.4
+    - scipy >=1.6.1
     - seaborn >=0.11.1
     - shap >=0.42.1
     - tabulate >=0.8.7
