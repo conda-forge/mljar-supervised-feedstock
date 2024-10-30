@@ -11,7 +11,7 @@ source:
   sha256: e57a8fb70dd930243c4627accfc773f0c63c026912df1d99739ec0eaa66c8b85
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,7 +27,7 @@ requirements:
     - category_encoders >=2.2.2
     - dtreeviz >=2.2.2
     - joblib >=1.0.1
-    - lightgbm >=3.0.0
+    - lightgbm ==4.3.0
     - markdown
     - matplotlib-base >=3.2.2
     - numpy >=1.19.5
