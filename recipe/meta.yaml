@@ -30,7 +30,7 @@ requirements:
     - lightgbm ==4.3.0
     - markdown
     - matplotlib-base >=3.2.2
-    - numpy >=2.0.0
+    - numpy >=1.26.4,<2
     - optuna-integration >=3.6.0
     - pandas >=2.0.0
     - scikit-learn >=1.5.0
