@@ -11,7 +11,7 @@ source:
   sha256: ca8eede123f64620397824b62a6532e7b0b14b54bc8ea1f8f94fc2f870e75ed6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -30,7 +30,7 @@ requirements:
     - lightgbm ==4.3.0
     - markdown
     - matplotlib-base >=3.2.2
-    - numpy >=1.19.5
+    - numpy >=2.0.0
     - optuna-integration >=3.6.0
     - pandas >=2.0.0
     - scikit-learn >=1.5.0
