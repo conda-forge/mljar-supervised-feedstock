@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mljar-supervised-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mljar-supervised-{{ version }}.tar.gz
   sha256: 588cde856656511bf7d3b61d315068d9ca77bf2e17c7c9054da1e6c3a2a29e5f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - py-xgboost-cpu >=2.0.0
     - catboost >=0.24.4
     - category_encoders >=2.2.2
@@ -43,6 +43,8 @@ requirements:
     - typing-extensions
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - supervised
     - supervised.algorithms
