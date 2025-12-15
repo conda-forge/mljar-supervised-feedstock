@@ -11,17 +11,17 @@ source:
   sha256: b00e92694fc4b82718d2da9fbbf82eefc91150f105a755098ed1cda460424f58
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - py-xgboost-cpu >=2.0.0
     - catboost >=0.24.4
     - category_encoders >=2.2.2
@@ -43,6 +43,8 @@ requirements:
     - typing-extensions
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - supervised
     - supervised.algorithms
