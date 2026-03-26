@@ -1,5 +1,5 @@
 {% set name = "mljar-supervised" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5025e81b16db0432bfa196e4cf500e8ec670fc84c441694235eaa763c1d26c2b
+  sha256: 0b22d69fb37dda8c1cfebf93363b2c575dbd6c4ae43dc6ebeb58130e24738763
 
 build:
   number: 0
